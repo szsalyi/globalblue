@@ -85,8 +85,8 @@ class InvoiceServiceTest {
 
     @Test
     void givenInvalidVatRate_whenInvoiceServiceCalculate_thenThrowIllegalArgumentException() {
-        BigDecimal amount = null;
-        BigDecimal vatRate = new BigDecimal(11);
+        BigDecimal amount = new BigDecimal(20);
+        BigDecimal vatRate = null;
 
         assertThrows(IllegalArgumentException.class ,
                 () -> invoiceService.calculate(

@@ -11,7 +11,7 @@ import static com.github.szsalyi.globalblue.TestUtil.MATH_CONTEXT;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-public class VatCalculatorTest {
+class VatCalculatorTest {
     private VatCalculator calculator;
 
     @BeforeEach
